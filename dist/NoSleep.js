@@ -117,7 +117,7 @@ var NoSleep = function () {
       if (oldIOS) {
         this.disable();
         this.noSleepTimer = window.setInterval(function () {
-          window.location.href = '/';
+          window.location.href = window.location.href;
           window.setTimeout(window.stop, 0);
         }, 15000);
       } else {
